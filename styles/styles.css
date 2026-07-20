@@ -7,8 +7,8 @@
 
 
 .fondo {
-  height: 90vh;
-  background-image: url('/assets/fondo.jpg');
+  height: 96vh;
+  background-image: url('/assets/fondo.png');
   background-size: cover;
   background-position: center;
 
@@ -20,7 +20,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -60,7 +60,7 @@
 .hero-content {
   position: absolute;
   bottom: 60px;
-  left: 60px;
+  right: 90px;
 
   z-index: 2;
 }
@@ -73,38 +73,100 @@
 }
 
 
-.about {
-  padding: 50px 10px;
+.info-card{
+  width: 500px;
+  min-height: 350px;
+
+  position: relative;
+
+  border-radius: 25px;
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(0,0,0,.15);
+
+  transition: .4s;
 }
 
+.info-card:hover{
+  transform: translateY(-10px);
+}
 
-.about-container {
-  max-width: 1500px;
+.card-background{
+  position: absolute;
+
+  top: -20px;
+  left: -20px;
+
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+
+  background-size: cover;
+  background-position: center;
+
+  filter: blur(7px);
+
+  z-index: 1;
+}
+
+.about{
+  padding: 80px 20px;
+}
+
+.about-container{
+  max-width: 1200px;
+
   margin: auto;
 
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
 
-  /* 🔥 ESTO EVITA QUE BAJEN */
-  flex-wrap: nowrap;
+  gap: 40px;
 }
 
-.cardd {
-  width: 50%;
-  background: #fff;
-  padding: 90px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  transition: 0.5s;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
+.info-card{
+  flex: 1;
+  min-height: 400px;
+}
+
+.about-card .card-background{
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.45)
+    ),
+    url("../assets/foto\ 1.jpg");
+}
+
+.whyus-card .card-background{
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.45)
+    ),
+    url("../assets/foto\ 2.jpg");
+}
+
+.card-content{
+  position: relative;
+  z-index: 2;
+
+  padding: 50px;
+
+  color: white;
+
+  height: 100%;
 }
 
 
-.cardd:hover {
-  transform: translateY(-10px);
+.highlight{
+  margin-top: 20px;
+
+  font-weight: 600;
+
+  padding-left: 20px;
+
+  border-left: 4px solid white;
 }
 
 .icon {
@@ -115,18 +177,19 @@
 .cardd h2 {
   font-size: 28px;
   margin-bottom: 15px;
-  color: #222;
+  color: white;
   font-weight: 600;
 }
 
+
 .cardd p {
-  color: #555;
+  color: white;
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
 .highlight {
-  color: #2e7d32;
+  color: white;
   font-weight: 500;
 }
 
@@ -214,6 +277,7 @@ body {
 }
 
 
+
 /* IMAGEN */
 .card-image {
   width: 50%;
@@ -296,6 +360,14 @@ body {
 .cards .cardt:last-child {
   animation-delay: calc(3s * var(--delay));
 }
+
+.card-content h2{
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+
 
 @keyframes animate {
     0%{
@@ -617,15 +689,34 @@ body {
 }
 
 .catalog-download {
-  background: linear-gradient(135deg, #1976d2, #125ea8);
+  background-color: #b142ad;
   padding: 80px 20px;
   color: white;
 }
 
 .catalog-container {
-  max-width: 900px;
+  width: 100%;
   margin: auto;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.catalog-text{
+  width: 50%;
+}
+
+.catalog-logo {
+  width: 40%;
+  height: 70%;
+}
+
+.catalog-logo img {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .catalog-text h2 {
@@ -646,7 +737,7 @@ body {
   gap: 12px;
 
   background: white;
-  color: #1976d2;
+  color: black;
 
   padding: 16px 36px;
   border-radius: 50px;
