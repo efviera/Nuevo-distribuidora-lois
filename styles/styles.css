@@ -950,3 +950,297 @@ body {
   }
 
 }
+
+/* ==========================
+   TABLETS
+========================== */
+
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar{
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .menu{
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu a{
+    font-size: 14px;
+  }
+
+  /* HERO */
+  .fondo{
+    height: 70vh;
+    background-position: center;
+  }
+
+  .hero-content{
+    right: 20px;
+    left: 20px;
+    text-align: center;
+    bottom: 40px;
+  }
+
+  .hero-content h1{
+    font-size: 34px;
+  }
+
+  /* NOSOTROS */
+  .about-container{
+    flex-direction: column;
+  }
+
+  .info-card{
+    width: 100%;
+    min-height: auto;
+  }
+
+  .card-content{
+    padding: 30px;
+  }
+
+  /* PRODUCTOS */
+  .carrusel{
+    height: 22em;
+    border-radius: 20px;
+  }
+
+  .card{
+    flex: 0 0 220px;
+  }
+
+  .card p{
+    font-size: 18px;
+  }
+
+  /* SLIDER */
+  .slider{
+    height: auto;
+    min-height: 600px;
+  }
+
+  .slide{
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .slide img{
+    width: 180px;
+    height: 180px;
+  }
+
+  .controls{
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 20px;
+  }
+
+  /* CATALOGO */
+  .catalog-container{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .catalog-logo,
+  .catalog-text{
+    width: 100%;
+  }
+
+  .catalog-logo img{
+    width: 200px;
+  }
+
+  /* FOOTER */
+  .footer-container{
+    text-align: center;
+  }
+
+  .footer-social{
+    justify-content: center;
+  }
+}
+
+/* ==========================
+   CELULARES
+========================== */
+
+@media (max-width: 480px){
+
+  .menu{
+    gap: 10px;
+  }
+
+  .menu a{
+    font-size: 12px;
+  }
+
+  .hero-content h1{
+    font-size: 28px;
+  }
+
+  .card-content h2{
+    font-size: 22px;
+  }
+
+  .catalog-text h2{
+    font-size: 28px;
+  }
+
+  .catalog-text p{
+    font-size: 16px;
+  }
+
+  .catalog-btn{
+    width: 100%;
+    justify-content: center;
+  }
+
+  .whatsapp-float{
+    width: 55px;
+    height: 55px;
+    font-size: 28px;
+  }
+
+  .instagram-float{
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width:768px){
+
+  .carrusel{
+    height: 300px;
+    border-radius: 20px;
+  }
+
+  .card{
+    flex: 0 0 180px;
+    height: 250px;
+    font-size: 1rem;
+  }
+
+  .card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card p{
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .cards{
+    min-height: auto;
+    padding: 40px 15px;
+  }
+
+  .outer{
+    width: 100%;
+  }
+
+  .cardt{
+    width: 100%;
+    max-width: 100%;
+    height: auto !important;
+
+    animation: none !important;
+    position: static !important;
+    transform: none !important;
+    opacity: 1 !important;
+
+    margin-bottom: 25px;
+  }
+
+  .avatar{
+    position: static;
+    margin-top: 20px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .outer{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .cards{
+    min-height: auto !important;
+    height: auto !important;
+    margin-bottom: 50px;
+  }
+
+  .outer{
+    position: static !important;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .catalog-section{
+    position: relative;
+    z-index: 1;
+    margin-top: 40px;
+  }
+
+}
+
+@media (max-width:768px){
+
+  .controls{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      right: auto;
+
+      display: flex;
+      gap: 12px;
+      z-index: 10;
+  }
+
+  .controls button{
+      width: 45px;
+      height: 45px;
+      border-radius: 12px;
+  }
+
+}
+
+@media (max-width:768px){
+
+    .duplicado{
+        display:none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .fondo{
+        background-image:url("../assets/fondo\ movile.png");
+        background-size:cover;
+        background-position:center;
+    }
+
+}
